@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./navbar.scss";
 export class navbar extends React.Component {
   render() {
     return (
       <div className={styles.navbar}>
-        <a href="">Home</a>
-        <a href="">Projects</a>
+        <Link to="/">Home</Link>
+        <Link to="/Projects">Projects</Link>
         <img className={styles.nav__logo} src="./assets/logo.png" alt="" />
-        <a href="">Contact Us</a>
-        <a href="">Stories</a>
+        <Link to="/">Contact Us</Link>
+        <Link to="/">Stories</Link>
       </div>
     );
   }

@@ -9,7 +9,13 @@ body {
   background-image: url("./assets/BackGround.jfif");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 #root {
   margin: 0 auto;
+}
+.content {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
 }
