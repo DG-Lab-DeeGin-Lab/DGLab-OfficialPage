@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  font-family: "MuseoModerno", cursive;
+}
+body {
+  background-image: url("./assets/BackGround.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#root {
+  margin: 0 auto;
+}

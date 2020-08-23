@@ -1,0 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap);
+@keyframes navbar__init___3qGj-{from{opacity:20%}to{opacity:100%}}.navbar__navbar___3qDD8{background-color:black;color:white;width:100vw;height:20vh;display:flex;justify-content:center;align-items:center}.navbar__navbar___3qDD8 .navbar__nav__logo___2WVV-{height:100%}.navbar__navbar___3qDD8 a{font-size:2rem;text-decoration:none;color:white}.navbar__navbar___3qDD8 a:hover{animation:navbar__init___3qGj- 2s}
+
+*,*::before,*::after{margin:0 auto;font-family:"MuseoModerno", cursive}body{background-image:url(./assets/BackGround.jfif);background-repeat:no-repeat;background-size:cover}#index__root___2w7wG{margin:0 auto}
+
