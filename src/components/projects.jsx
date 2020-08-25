@@ -7,10 +7,12 @@ const Projects = class Projects extends React.Component{
         {
             project: [
                 {
+                    id:1,
                     name: 'BPSS',
                     description: 'nothing'
                 },
                 {
+                    id:2,
                     name: 'Chatting Room',
                     description: 'nothing'
                 }
@@ -21,7 +23,7 @@ const Projects = class Projects extends React.Component{
         let ref = this.state.project;
         let card = ref.map((items)=>{
         return (
-        <div className={styles.card}>
+        <div key={items.id} className={styles.card}>
         <div key={items.name}>{items.name}</div>
         </div>
         )

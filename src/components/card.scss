@@ -4,15 +4,47 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+.focus{
+    display: block;
+    position: relative;
+}
+.focus::before,
+.focus::after{
+    height: 1px;
+    width: 10vw;
+    background-color:white;
+    position: absolute;
+    top: 2.2rem;
+    content: "";
+}
+.focus::before{
+    left: 30%;
+}
+.focus::after{
+    right: 30%;
+}
 .card{
     color: black;
     font-size: 1.5rem;
-    width: 20vw;
-    height: 20vh;
+    width: 30vw;
+    // height: 20vh;
     padding: 1rem;
     margin-top: 1rem;
     background-color: white;
-    opacity: 70%;
+    // opacity: 70%;
     border-radius: 1rem;
     display: flex;
+    flex-direction: column;
+    li{
+        font-size: 0.8em;
+    }
 }
+.card__pic{
+    width: 100%;
+    border-radius: 50%;
+}
+@media screen and (max-width: 650px){
+    .card{
+      width: 70vw;
+    }
+    }

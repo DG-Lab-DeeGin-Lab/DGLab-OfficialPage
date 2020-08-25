@@ -7,7 +7,7 @@ import Projects from "./components/projects.jsx";
 import styles from "./index.scss";
 const Navbar = navbar;
 ReactDom.render(
-  <div>
+  <div className={styles.wrap}>
     <HashRouter>
       <Navbar />
       <div className={styles.content}>
