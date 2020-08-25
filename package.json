@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage":"https://dg-lab-deegin-lab.github.io/DGLab-OfficialPage/dist",
   "scripts": {
     "serve": "webpack-dev-server",
     "build-css": "node-sass src/index.scss src/index.css",
