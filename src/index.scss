@@ -7,7 +7,7 @@
 }
 body {
   color: white;
-  min-width: 400px;
+  min-width: 320px;
 }
 .wrap {
   background-image: url("./assets/BackGround.jfif");
@@ -22,8 +22,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 650px){
-  html{
+@media screen and (max-width: 650px) {
+  html {
     font-size: 8px;
   }
+}
+@media screen and (max-width: 370px) {
+  html {
+    font-size: 6px;
   }
+  .content {
+    font-size: 1.5rem;
+  }
+}
