@@ -58,6 +58,10 @@
   width: 100%;
   border-radius: 50%;
 }
+.card__label{
+    display: flex;
+    flex-direction: row;
+}
 @media screen and (max-width: 650px) {
   .card {
     width: 70vw;

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    // width: 70vw;
+    min-height: 100vh;
+}
+.story{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+.story__box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #fff, $alpha: .9);
+    width: 38vw;
+    color: black;
+    img{
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .story__box{
+    width: 80%;
+    margin-bottom: 1rem;
+    }
+  }

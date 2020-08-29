@@ -29,11 +29,13 @@ const Projects = class Projects extends React.Component {
         <div key={items.id} className={styles.card}>
           <h2 key={items.name}>{items.name}</h2>
           <div key={items.description}>{items.description}</div>
+          <div className={styles.card__label}>
           {items.source ? (
             <div className={styles.label + " " + styles.open}>open</div>
           ) : (
             <div className={styles.label + " " + styles.closed}>closed</div>
           )}
+          </div>
         </div>
       );
     });

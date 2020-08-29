@@ -9,7 +9,7 @@ export class navbar extends React.Component {
         <Link to="/Projects">Projects</Link>
         <img className={styles.nav__logo} src="./assets/logo.png" alt="" />
         <Link to="/">Contact Us</Link>
-        <Link to="/">Stories</Link>
+        <Link to="/Stories">Stories</Link>
       </div>
     );
   }
