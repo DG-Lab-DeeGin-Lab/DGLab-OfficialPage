@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './stories.scss';
 import axios from 'axios';
 const Stories = class Stories extends React.Component{
+    _isMounted = false;
     constructor(props){
         super(props);
         this.state = {
@@ -9,12 +10,18 @@ const Stories = class Stories extends React.Component{
         };
     }
     componentDidMount(){
+        this._isMounted = true;
         axios.get('https://dg-lab-c5d9c.firebaseio.com/stories.json')
         .then((res)=>{
-            this.setState({
-                result: Array.from(res.data)
-            })
+            if (this._isMounted) {
+                this.setState({
+                    result: Array.from(res.data)
+                })
+            }
         })
+    }
+    componentWillUnmount(){
+        this._isMounted = false;
     }
     render(){
         const { result } = this.state;

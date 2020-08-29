@@ -25,13 +25,12 @@ module.exports = {
         test: /.jsx$/,
         use: {
           loader: "babel-loader",
-          // loader: require.resolve('babel-loader'),
           options: {
             presets: ["@babel/preset-react", "@babel/preset-env"],
             plugins: [
-              [
-                "@babel/plugin-proposal-class-properties"
-              ]]
+                "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-syntax-class-properties"
+              ]
           },
         },
       },
